@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ru">
+  <head >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Underdog&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d831941402.js" crossorigin="anonymous"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/images/iconkrampus.png" type="image/png">
+    <title>Добро пожаловать!</title>
+    <style>
+
+
+ body{ 
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Underdog', cursive;
+  background-image: url(/images/house_background.jpg);
+  background-size: 100%; 
+  padding: 5px;
+  cursor: url(/images/arrow.cur), auto;
+        }
+#shop{
+  background-image:url(/images/button_background.jpg);
+  padding: 4px;
+  border-radius: 8px;
+  filter: sepia(15%);
+}
+.btn{
+  background-image: url(/images/button_background.jpg);
+  border:solid 2px;
+  box-shadow: rgb(55, 52, 52) 4px; 
+  cursor:pointer = false;
+  cursor: url(/images/claw.cur), auto  !important;
+  filter: sepia(15%);
+}
+.btn:hover{
+  background-image: url(/images/button_background.jpg);
+  border:solid 2px;
+  box-shadow: rgb(43, 41, 41) 8px; 
+  cursor:pointer = false;
+  cursor: url(/images/claw.cur), auto  !important;
+  filter: sepia(1%);
+}
+
+
+
+#main-2{
+color: bisque;
+
+
+}
+#footer{
+  background-image: url(/images/button_background.jpg);
+  padding: 5px;
+  border-radius: 8px;
+  filter: sepia(15%);
+}
+#paper{
+  background-image: url(/images/paper3.jpg); 
+  font-size: large;
+   filter: sepia(40%);
+}
+#mark{
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#snowball{
+  margin: top 20%;;
+  margin-left: 10%;
+  
+  cursor: url(/images/claw.cur), auto;
+}
+#top{
+  padding: 5px;
+}
+#calendar_parent{
+  position: relative;
+}
+#calendar{
+  position: absolute;
+ margin-top: 2%;
+ margin-left: 1%;
+ 
+}
+#timer{
+  position: absolute;
+    margin-top: 14%;
+    margin-left: 12%;
+    color: crimson;
+    cursor: url(/images/claw.cur), auto;
+}
+span{
+  color: crimson;
+  font-size: x-large;
+}
+
+ </style>
+
+  </head>
+    <body onload="time()">
+   
+ 
+    <div class="container" id="top">
+      <div class="row">
+        <nav class="col-md-6 col-xl-12 order-md-1 order-xl-0" id="shop"  >
+          <div class="row">
+            <nav class="col-xl-2" ><button type="button" class="btn  btn-lg btn-block"onclick="window.location.href = 'dolls.html';" ><i class="fa-solid fa-snowman"></i>Игрушки и куклы</button></nav> 
+            <nav class="col-xl-2" ><button type="button" class="btn  btn-lg btn-block"onclick="window.location.href = 'postcards.html'" ><i class="fa-solid fa-scroll"></i>Винтажные открытки</button></nav> 
+            <nav class="col-xl-2" ><button type="button" class="btn  btn-lg btn-block"onclick="window.location.href = 'jewelry.html'"><i class="fa-solid fa-gem"></i>Изделия из серебра</button></nav> 
+            <nav class="col-xl-2" ><button type="button" class="btn  btn-lg btn-block" onclick="window.location.href = 'soap.html'"><i class="fa-solid fa-gifts"></i>Мыло, свечи и чай</button></nav> 
+            <nav class="col-xl-2" ><button type="button" class="btn  btn-lg btn-block"onclick="window.location.href = 'smoke.html'"><i class="fa-solid fa-wand-sparkles"></i>Лампады для дыма</button></nav> 
+            <nav class="col-xl-2" ><button type="button" class="btn  btn-lg btn-block"onclick="window.location.href = 'house.html'"><i class="fa-solid fa-broom"></i>Украшения жилища</button></nav> 
+          </div>
+      </nav> 
+        
+        <header class="col-md-6 col-xl-12 order-md-0 order-xl-1">
+          <div class="row">
+            <div class="col-xl-8" id="calendar_parent">
+              <div class="container"id="calendar" >
+              <img  src="/images/kisspng-christmas-clip-art-5ae2284836c913.6705202415247708882244.png"   width="20%" alt="111" id="calendar" >
+              <p id="timer" style="font-size:2vw;">222</p>
+            </div>
+              <img src="/images/dandy.jpg" width="100%" alt=""></div>  
+            <div class="col-xl-4" id="paper">
+              <img id="mark" src="/images/main_crampus_logo.jpg" width="30%" alt="" >
+              <p ><h2>Die Krampus Fabrik</h2><h3>Добро пожаловать в лавку мрачных подарков!</h3>В то время, как на фабрике Санта-Клауса трудолюбивые эльфы мастерят добрые игрушки для хороших детей, мы создаем прямо противоположные подарки.<br>Три недобрых эльфа приветствуют вас! В своей маленькой мастерской мы творим всякое непотребство.<br>Наши вещи никогда не повторяются. У каждой из них свой запах, свой внешний вид и свой(как правило, странный)состав. Мы смешиваем пропорции, ориентируясь на нюх и интуицию. Уговариваем, заговариваем и оживляем свои творения, чтобы они служили разным сомнительным целям. Только одно условие - трижды подумайте, прежде чем брать наши вещи. Мы вкладываем в них частички души, и они никогда не бывают равнодушны к своим владельцам. Если вам нужен необычный подарок - мы сможем вам помочь, но поторопитесь, ведь до Нового Года осталось всего-то <span id="advert"></span> </p></div>  
+          </div>
+        
+        </header>      
+      </div>
+    </div>
+  
+
+    <main> 
+    <div class="container" id="main-2">
+      <div class="row">
+    
+        <div class="col-md-3" >
+          <a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B0%D0%BC%D0%BF%D1%83%D1%81"> <img src="/images/scary.jpg" width="100%" alt="" style="cursor: url(/images/claw.cur), auto;"></a>
+        Прочитать о Крампусе в Википедии
+        </div>  
+       
+        <div class="col-md-6">
+        Мы рады видеть вас в гостях. Вы можете ознакомиться с нами товарами, а можете прочитать в Википедии статью про Крампуса или послушать Рождественскую мелодию, нажав на снежный шар.
+        </div>
+      
+        
+        <div class="col-md-3">
+          <div>
+          <img src="/images/snowball.png" width="50%" alt=""  id="snowball" onclick="soundStart()" >
+          Послушать музыку
+        </div>
+        </div>      
+      </div>
+    </div>
+
+  </main>  
+ <footer>
+    <div class="container" id="footer">
+      <div class="row">
+        <nav class="col-xl-4" ><button type="button" class="btn  btn-lg btn-block"><i class="fa-solid fa-ghost"></i>Контакты</button></nav> 
+        <nav class="col-xl-4" ><button type="button" class="btn  btn-lg btn-block"><i class="fa-brands fa-pied-piper-alt"></i>Зарегистрироваться</button></nav> 
+        <nav class="col-xl-4" ><button type="button" class="btn  btn-lg btn-block"><i class="fa-solid fa-crow"></i>Обратная связь</button></nav> 
+    <!--   </div>
+      Копирайт када-то чето-там
+    </div>   -->
+  </footer>
+  <script>
+  
+  timeend= new Date();
+
+timeend= new Date(timeend.getYear()>1900?(timeend.getYear()+1):(timeend.getYear()+1901),0,1);
+
+function time() {
+    today = new Date();
+    today = Math.floor((timeend-today)/1000);
+    tsec=today%60; today=Math.floor(today/60); if(tsec<10)tsec='0'+tsec;
+    tmin=today%60; today=Math.floor(today/60); if(tmin<10)tmin='0'+tmin;
+    thour=today%24; today=Math.floor(today/24);
+    timestr=today +" дней "+ thour+" часов "+tmin+" минут "+tsec+" секунд";
+    document.getElementById('timer').innerHTML=today;
+    document.getElementById('advert').innerText =timestr;
+    window.setTimeout("time()",1000);
+}
+
+let audio = new Audio();
+audio.src = '/audio/Frank Sinatra and Bing Crosby - Merry Christmas to You.mp3';
+audio.volume = 1; //Громкость
+
+function soundStart() {
+  audio.play(); 
+}
+
+
+  </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+  
+  </body>
+</html>
